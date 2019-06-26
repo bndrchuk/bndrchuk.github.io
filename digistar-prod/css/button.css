@@ -1,0 +1,49 @@
+@font-face {
+      font-family: "MyriadProRegular";
+      src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+      src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+      url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+}
+
+.header form{
+  position: relative;
+}
+.header form input[type="text"] {
+  height: 36px;
+  text-align: right;
+  padding: 0 42px 0 15px;
+  border: none;
+  outline: 0;
+  background: transparent;
+  transition: .4s ;
+  position: absolute;
+  top: -17px;
+  right: 17px;
+  z-index: 2;
+    font-family: 'MyriadProRegular' , sans-serif; 
+  font-size: 12px;
+  border-radius: 15px;
+}
+.header form input[type="text"]:focus {
+  width: 150px;
+  z-index: 1;
+  border: 1px solid #F0906E;
+  text-align: left
+}
+.header form input[type="image"] {
+  border: none;
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  top: -17px;
+  right: 17px;
+}
+.header form input[type="image"]::before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
