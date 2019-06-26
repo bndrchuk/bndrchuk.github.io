@@ -21,6 +21,7 @@
 /* ----------------------------- */
 html{
 	height: 100%;
+	scroll-behavior: smooth;
 }
 * {
 	box-sizing: border-box;
@@ -472,6 +473,7 @@ nav ul li:last-child a{
 	color: #a3afb2;
 }
 /*********** adaptive *********/
+
 @media (min-width: 1200px) and (max-width: 1400px){
 	.header header{
 		width: 75%;
