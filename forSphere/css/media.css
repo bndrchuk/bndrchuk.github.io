@@ -1,0 +1,261 @@
+@media (max-width: 1024px){
+	.headline p {
+    	font-size: 30px;
+	}
+
+}
+
+
+@media (max-width: 770px){
+	header nav {
+		max-width: 80%;
+	}
+	.headline {
+		max-width: 65%;
+	}
+	header::after{
+		display: none;
+	}
+	.headline p{
+		 font-size: 30px;
+	}
+	.headline {
+   		 margin-top: 150px;
+   		 min-width: 500px;
+	}
+	.card__info p:first-child , .card__info p:nth-child(2) {
+		font-size: 15px;
+		line-height: 35px;
+		    margin-bottom: 30px;
+	}
+	.card:first-child .card__text{
+		max-width: 350px;
+	}
+	.card:nth-child(2) .card__text{
+		max-width: 385px;
+	}
+	.card--bottom{
+		 max-width: 384px;
+	}
+	.footer{
+		min-width: 100%;
+	}
+	.footer__row{
+		position: relative;
+    	left: 80px;
+	}
+	.footer__items:after{
+		width: 620px;
+		left: 0;
+	}	
+	.footer > p {
+		right: 35px;
+	}
+}
+
+
+@media (max-width: 430px){
+	header nav {
+		display: flex;
+    	flex-direction: column;
+	}
+	nav ul {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.headline {
+	    min-width: 300px;
+	}
+	.headline p{
+		 font-size: 20px;
+	}
+	.headline p:before {
+	    height: 80px;
+	    width: 90px;
+	}
+	.card {
+	    display: flex;
+	    flex-direction: column;
+    }   
+    .card__info {
+    	top: 0;
+    	min-height: 500px;
+    	justify-content: center;
+    }
+    .card-btn {
+    	margin-top: 20px;
+    	min-width: 200px;
+    	    font-size: 14px;
+    }
+    .card__text{
+		justify-content: center;
+		min-height: 450px;
+	}
+	.footer > p {
+    	right: 45px;
+	}
+	.card:first-child .card__text ,
+	.card:nth-child(2) .card__text
+	{		
+		max-width: 450px;
+		margin-top: 0;
+	}
+    .popup {
+    	max-width: 300px;
+    }
+    .popup form {
+    	max-height: 365px; 
+    	 display: flex;
+    	  flex-direction: column; 
+    }
+    .popup form .card-btn {
+    	min-width: 180px;
+    	border: 2px solid #e7e7e7;    	
+	    padding: 12px;
+	    font-size: 14px;
+    }
+    .popup form input, textarea {
+	    padding: 15px;
+	    font-size: 14px;
+	}
+    .card__photo {
+    	display: none;
+    }
+    .card--bottom {
+  	  top: 100px;
+   	 	right: 0;
+   	 	top: 0;
+   	 	max-width: 450px;
+   	}
+	.footer__row {
+		left: 0;
+	}
+	.footer__items {
+		left: 30px;
+		max-width: 390px;
+	}
+	.footer__items:after {
+    	width: 350px;
+    }
+	.footer__items ul li, .footer__items ul li a{
+		font-size: 14px;
+	}
+	.footer_social {
+		flex-direction: column;
+	    min-width: 30px;
+	    max-height: 80px;
+	}	
+
+}
+
+@media (max-width: 390px){
+	header nav {
+    	max-width: 90%;
+    }
+    .headline {
+   	 min-width: 240px;
+   	}
+   	.card__info {
+    	min-height: 550px;
+    }
+    .card:first-child .card__info p {
+    	 margin-bottom: 20px;
+    }
+    .popup {
+	    max-width: 270px;
+   		 max-height: 400px;	
+   	}
+   	.popup form input, textarea {
+    	padding: 15px;
+    	font-size: 12px;
+	}
+	.footer > p {
+	    right: 25px;
+	}
+	.card__text p {
+	    line-height: 31px;
+	}
+	.card-btn {
+    	font-size: 13px;
+   		padding: 15px 20px;
+	}
+    .popup form .card-btn {
+	    min-width: 160px;
+	    font-size: 13px;
+	}
+	.footer__items{
+		position: relative;
+		   max-width: 320px
+	}
+	.footer__items:after {
+   		 width: 320px;
+	}	
+	.footer_social {
+	    position: absolute;
+	    bottom: -50px;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    left: 0px;
+	     min-width: 100px;
+	}
+
+}
+
+@media (max-width: 330px) {
+	.card__info p:first-child, .card__info p:nth-child(2) {
+    	font-size: 13px;
+	}
+	header nav {
+    	max-width: 95%;
+	}
+	.headline {
+   		 min-width: 200px;
+	}
+	.wrapper {
+    	width: 85%;	
+	}
+	
+	.card__text .wrapper h2:before ,
+	.card__text .wrapper p:after {
+    	width: 200px;
+	}
+  	.card-btn {
+     margin-top: 0;
+ 	}
+ 	.card--bottom {
+    	min-height: 450px;
+	}
+	.popup form .card-btn {
+	    font-size: 12px;
+	    padding: 9px;
+	}
+	.popup form .card-btn:after {
+	    bottom: 8px;
+	}
+	.footer{
+		 align-items: center;
+	}
+	.footer__items {
+    	left: 0;
+    	 min-width: 295px;
+	}
+	.footer__row {
+    	max-width: 290px;
+    	align-self: stretch;
+	}
+	.footer__items:after {
+    	width: 280px;
+	}
+	.popup {
+	   	 max-width: 210px;
+	   	 max-height: 320px;
+	   	 padding: 40px;
+	}
+	.popup form .card-btn {
+    	min-width: 140px;
+	}
+	.popup form input, textarea {
+    	padding: 10px;
+    	font-size: 12px;
+    }
+}

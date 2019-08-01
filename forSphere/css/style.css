@@ -1,0 +1,391 @@
+@font-face{
+  font-family: "BasisGrotesquePro";
+  src: url('../fonts/BasisGrotesquePro.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body, p, ul , li ,h1,h2,h3,h4,h5,h6  {
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+  font-family: "BasisGrotesquePro";  
+} 
+ul, li {
+  list-style-type: none;
+}
+span , a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  min-height: 550px;
+  height: 100%;
+  
+}
+/**************** HEADER *****************/
+
+header{ 
+  background-image: url('../image/bg-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-height: 550px;
+  position: relative;
+}
+header:after{
+  content: url(../image/ripples.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+nav {
+  width: 100%;
+  max-width: 940px;
+  display: flex;  
+  align-items: center;
+  padding-top: 40px;
+}
+nav ul{
+  width: 100%;
+  max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-left:100px; 
+}
+nav a , .headline p{
+  color: #ffffff;
+}
+/**************** HEADER-TEXT *****************/
+.headline{
+  margin-top: 150px;
+  min-width: 835px;
+}
+.headline p{
+    font-size: 40px;    
+    font-family: "BasisGrotesquePro";
+    font-weight: 900;       
+    position: relative;
+  }
+.headline p:before{
+  position: absolute;
+  top: -35px;
+  left: -45px;
+  content: " ";
+  height: 105px;
+  width: 140px;
+  border-top: 7px solid white;
+  border-left: 7px solid white;
+
+}
+
+
+/*************** CONTENT ****************/
+main{
+  background-color: #f8f8f8;
+  display: flex;
+    justify-content: center;
+}
+.cards{  
+    max-width: 940px;        
+    display: flex;
+    flex-direction: column;
+}
+.card{
+   display: flex;
+}
+.card:first-child{
+    min-height: 660px;
+}
+.card__info{
+  background-color: #fff;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  min-height: 610px;
+  position: relative;
+    top: -50px;
+}
+.card__info p:first-child{
+  color: #000;
+  font-size: 16px;  
+  font-weight: 600;
+  line-height: 40px;
+}
+.card__info p:nth-child(2){
+  line-height: 45px;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+.card .card__text .wrapper {
+    width: 65%;
+}
+.wrapper{
+  width: 70%;
+  align-self: center;
+      display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+        height: 95%;
+}
+.card-btn{
+  color: #121212;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid #e7e7e7;
+  padding:15px;
+  transition: all 0.3s ease-out;
+  min-width: 230px;
+  display: flex;
+    justify-content: space-between;
+}
+.card-btn:after{
+  content: url(../image/arrow.png);
+  }  
+
+.card__text {
+    background-color: #f9f5d5;
+      width: 100%;
+    max-width: 400px;    
+    max-height: 550px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+}
+.card__text .wrapper{
+    align-items: flex-start;
+    justify-content: center;
+}
+.card__text .wrapper p{
+    position: relative;
+      font-size: 14px;
+}
+
+.card__text .wrapper p:after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ccc;
+    bottom: -25px;
+    width: 250px;
+    left: 0;
+}
+.card__text .wrapper h2{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+    margin: 0 0 30px;
+}
+.card__text .wrapper h2:before{
+  content: "";
+  width: 250px;
+  border-bottom: 5px solid #0a0a0b;
+  position: absolute;
+  top: -25px;
+}
+.card__text p{
+  color:#818181;
+  font-size: 14px;
+  line-height: 38px;
+}
+.card:first-child .card__text{
+
+    margin-top: 140px;
+  }
+.card:nth-child(2){
+  position: relative;
+}
+.card:nth-child(2) .card__text{
+    background-color: #e9f6fd;
+    position: relative;
+    min-height: 725px;
+}
+.card__photo{
+  width:100%;
+  overflow: hidden;
+  max-width: 860px;
+  position: absolute;
+  right: 0;
+  top: 8%;
+  min-height: 580px;
+  z-index: 0;
+  align-self: flex-end;
+  display: relative;
+}
+.card__photo:before{
+    content: url(../image/ripples-card.png);
+    position: absolute;
+    top: -25px;
+    left: 80px;
+}
+.card--bottom{
+    background-color: #f8e4e3;
+    position: relative;
+    right: -50%;
+    bottom: 155px;
+    min-height: 510px;
+}
+.card--bottom .wrapper p:after{
+    display: none;
+} 
+.card--bottom .card-btn{
+  border: 2px solid #e1cfce;
+  margin-top: 30px;
+}
+
+/********** FOOTER ***********/
+
+footer { 
+  display: flex;
+  justify-content: center;
+}
+.footer {  
+  min-height: 500px;
+  min-width: 940px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer__row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 330px;
+}
+.footer__row p {
+  color: #000;
+  font-size: 16px;  
+  font-weight: 900;
+}
+.footer__items{
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 110px;
+}
+.footer__items:after{
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  left: -85px;
+  width: 940px;
+  border: 1px solid #e5e5e5;
+}
+.footer_social {
+  min-width: 105px;
+  max-height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__items ul li , .footer__items ul li a{
+  line-height: 35px;
+  color: #818181;
+}
+.footer__items ul li:first-child , .footer__items ul li:last-child{
+  color: #0a0a0b;
+  font-weight: 900;
+}
+.footer > p{
+  max-width: 185px;
+    align-self: flex-end;
+    margin-top: 50px;
+    font-size: 12px;
+    position: relative;
+    right: -25px;
+}
+.footer > p:before{
+  content: "\00a9";
+  position: absolute;
+  left: -15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999999;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  max-width: 440px;
+  position: relative;
+  transition: all 3s ease-in-out;
+  display:flex; 
+  flex-direction: column;
+}
+
+.popup h4 {
+  font-size: 16px;
+  font-weight: 900;  
+  font-family: "BasisGrotesquePro";  
+  text-align: center;
+  margin-bottom: 20px;
+}
+.popup .close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 50px;
+  text-decoration: none;
+  color: #333;
+  max-width: 30px;
+  max-height: 40px;
+}
+.popup .close:hover {
+  color: #F95964;
+}
+.popup form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+   max-height: 465px;  
+    overflow: auto;
+}
+.popup form input , textarea{
+    padding: 20px;
+    margin-top: 15px;
+    color: #b6b6b6;
+    font-size: 16px;
+    font-weight: bold;  
+    font-family: "BasisGrotesquePro"; 
+    outline: 0; 
+    border: 2px solid #e7e7e7;
+    resize: none
+}
+.popup form .card-btn {
+    max-width: 230px;
+    align-self: center;
+    margin-top: 20px;
+    border: 3px solid #e7e7e7;
+    justify-content: center;
+    position: relative;
+}
+.popup form .card-btn:after {
+    max-width: 230px;
+    position: absolute;
+    right: 25px;
+}
